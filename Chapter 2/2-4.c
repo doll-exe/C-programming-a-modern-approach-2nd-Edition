@@ -6,7 +6,7 @@ With tax added: $105.00*/
 #include <stdio.h>
 
 int main(void) {
-    float amount = 0, result;
+    float amount = 0;
     printf("Enter an amount: ");
     scanf("%f", &amount);
     printf("With tax added: $%.2f", amount+(amount*0.05));
