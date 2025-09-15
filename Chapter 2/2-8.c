@@ -13,3 +13,19 @@ Display each balance with two digits after the decimal point. Hint: Each month, 
 but increased by the balance times the monthly interest rate. To find the monthly interest rate, convert the interest rate entered by 
 the user to a percentage and divide it by 12.
 */
+
+#include <stdio.h>
+int main(void) {
+    float loan, rate, payment, dummy = 0;
+    int counter = 0;
+    scanf("%f", &loan);
+    scanf("%f", &rate);
+    scanf("%f", &payment);
+    while (counter<3) {
+        dummy = ((loan - payment)+(loan*(rate/(100*12))));
+        printf("%d payment: %.2f\n", counter + 1, dummy);
+        loan = dummy;
+        counter++;
+    }
+    return 0;
+}
