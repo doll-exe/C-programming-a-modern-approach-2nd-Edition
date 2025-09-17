@@ -36,4 +36,13 @@ for key in mydic.keys():
     
 for value in mydic.values():
     print(value) 
+
+also, instead of creating a whole library i could have used ZIP because all that i do is printing:
+
+isbn = input("Enter ISBN: ")
+labels = ["GSI prefix", "Group identifier", "Publisher code", "Item number", "Check digit"]
+parts = isbn.split("-")
+
+for label, part in zip(labels, parts):
+    print(f"{label}: {part}")
 '''
