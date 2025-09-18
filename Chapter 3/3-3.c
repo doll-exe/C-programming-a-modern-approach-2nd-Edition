@@ -18,3 +18,11 @@ Check digit: 3
 Note: The number of digits in each group may vary: you can't assume that groups have the lengths shown in this example. 
 Test your program with actual ISBN values (usually found on the back cover of a book and on the copyright page).
 */
+#include <stdio.h>
+int main(void) {
+    int GSI, id, code, num, cdigit;
+    printf("Enter ISBN: ");
+    scanf("%d-%d-%d-%d-%d", &GSI, &id, &code, &num, &cdigit);
+    printf("GSI prefix: %d\nGroup identifier: %d\nPublisher code: %d\n", GSI, id, code);
+    printf("Item number: %d\nCheck digit: %d\n", num, cdigit);
+}
