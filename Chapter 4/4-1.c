@@ -13,6 +13,6 @@ int main (void) {
     scanf("%2d", &num);
     n1 = num/10;
     n2 = num%10;
-    printf("The reversal is: %d%d", n1, n2);
+    printf("The reversal is: %d%d", n2, n1);
     return 0;
 }
