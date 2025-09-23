@@ -10,7 +10,7 @@ Then divide the original number by 8 and repeat the process to arrive at the nex
 */
 
 /* while thinking on this problem, i realized that i might need recursion to solve it
-     * i deliberately didn't solve it in an easy way and i see that i need to keep dividing my number by 8,
+     * i deliberately didn't solve it in an easy way. i see that i need to keep dividing my number by 8,
      * therefore i will get 1463 in the case of input 1953. however, i need to print it out backwards, right?
      * and then recursion!!! popped up in my mind so i will try and implement it in this problem*/
 
