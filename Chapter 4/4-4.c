@@ -38,4 +38,5 @@ int main(void) {
         printf("0");
     }
     to_octal(num);
-    }
+    return 0;
+}
