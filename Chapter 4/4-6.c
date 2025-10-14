@@ -19,3 +19,20 @@ for an EAN. The user will enter the first 12 digits of the EAN as a single numbe
 Enter the first 12 digits of an EAN: 869148426000
 Check digit: 8
 */
+#include <stdio.h>
+int main (void) {
+    char ean [13];
+    int array [12];
+    int sum1, sum2;
+    printf("Enter the first 12 digits of an EAN: ");
+    scanf("%11s", ean);
+    for (int i = 0; i <12; i++) {
+        array[i] = ean[i] - '0';
+    }
+    for (int i = 0; i<12; i++) {
+        if (i%2==0) sum1+=array[i];
+        else sum2+=array[i];
+    }
+    printf("Check digit: %d", 9-((sum1*3+sum2-1)%10));
+    return 0;
+}
